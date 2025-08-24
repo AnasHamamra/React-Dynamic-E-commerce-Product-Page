@@ -1,0 +1,66 @@
+@use './variables' as *;
+
+:root { scroll-behavior: smooth; }
+
+body {
+  background: $bg-soft;
+  color: $color-text;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* skip link focusable */
+.visually-hidden-focusable {
+  position: absolute; left: -999px; width: 1px; height: 1px; overflow: hidden;
+  &:focus { position: static; width: auto; height: auto; margin: 16px; padding: 8px; background: #fff; border: 2px solid #000; z-index: 1000; }
+}
+
+/* Navbar hover style similar to your original */
+.navbar {
+  padding: 16px;
+  transition: background-color .3s ease;
+  &:hover {
+    background: $brand-black !important;
+    .nav-link, .navbar-brand, .icon-link { color: #fff !important; }
+  }
+}
+
+.icon-link {
+  color: inherit; font-size: 1.1rem;
+  &:hover { color: #555; }
+}
+
+.card {
+  border: 0;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+.image-wrapper {
+  overflow: hidden; border-radius: $radius;
+  img { display: block; width: 100%; height: 260px; object-fit: cover; transition: transform .15s ease; }
+  img:hover { transform: scale(1.02); }
+}
+
+.thumb {
+  cursor: pointer; border: 2px solid transparent; border-radius: $radius;
+  img { height: 72px; object-fit: cover; }
+  &.active { border-color: #000; }
+}
+
+.offcanvas.fullscreen {
+  width: 100vw !important; background: #000; color: #fff;
+}
+
+.badge-discount {
+  position: absolute; top: .5rem; left: .5rem; z-index: 2;
+}
+
+.actions-row { gap: .5rem; }
+
+/* Utilities */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important;
+  overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important;
+}
