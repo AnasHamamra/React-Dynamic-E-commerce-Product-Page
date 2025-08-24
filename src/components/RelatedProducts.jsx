@@ -1,5 +1,5 @@
 import React from 'react';
-import './RelatedProducts.css'; // أضفنا ملف CSS منفصل
+import './RelatedProducts.css';
 
 export default function RelatedProducts({ items = [], onSelect = () => {} }) {
   return (

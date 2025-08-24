@@ -8,7 +8,7 @@ import Loader from '../components/Loader';
 import Error from '../components/Error';
 import { useCart } from '../context/CartContext';
 
-/* Use the same data you provided — images must exist in /public/assets/imgs/ */
+
 const MOCK_PRODUCTS = [
   {
     id: 1,
@@ -16,9 +16,9 @@ const MOCK_PRODUCTS = [
     price: '$299',
     description: 'A powerful smartphone with long battery life.',
     images: [
-      { src: '/assets/imgs/RedSmartphone.jpeg', alt: 'Smartphone'},
-      { src: '/assets/imgs/BlueSmartphone.jpeg', alt: 'Smartphone' },
-      { src: '/assets/imgs/GreenSmartphone.jpeg', alt: 'Smartphone' }
+      { src: 'public/assets/imgs/RedSmartphone.jpeg', alt: 'Smartphone'},
+      { src: 'public/assets/imgs/BlueSmartphone.jpeg', alt: 'Smartphone' },
+      { src: 'public/assets/imgs/GreenSmartphone.jpeg', alt: 'Smartphone' }
     ],
     category: 'Electronics',
   },
@@ -28,9 +28,9 @@ const MOCK_PRODUCTS = [
     price: '$19',
     description: 'Comfortable cotton T-shirt available in all sizes.',
     images: [
-      { src: '/assets/imgs/RedTshirt.jpeg', alt: 'T-Shirt1' },
-      { src: '/assets/imgs/BlueTshirt.jpeg', alt: 'T-Shirt2' },
-      { src: '/assets/imgs/GreenTshirt.jpeg', alt: 'T-Shirt3' }
+      { src: 'public/assets/imgs/RedTshirt.jpeg', alt: 'T-Shirt1' },
+      { src: 'public/assets/imgs/BlueTshirt.jpeg', alt: 'T-Shirt2' },
+      { src: 'public/assets/imgs/GreenTshirt.jpeg', alt: 'T-Shirt3' }
     ],
     category: 'Clothing',
   },
@@ -40,9 +40,9 @@ const MOCK_PRODUCTS = [
     price: '$899',
     description: 'Lightweight laptop for work and play.',
     images: [
-      { src: '/assets/imgs/RedLaptop.jpeg', alt: 'Laptop' },
-      { src: '/assets/imgs/BlueLaptop.jpeg', alt: 'Laptop' },
-      { src: '/assets/imgs/GreenLaptop.jpeg', alt: 'Laptop' }
+      { src: 'public/assets/imgs/RedLaptop.jpeg', alt: 'Laptop' },
+      { src: 'public/assets/imgs/BlueLaptop.jpeg', alt: 'Laptop' },
+      { src: 'public/assets/imgs/GreenLaptop.jpeg', alt: 'Laptop' }
     ],
     category: 'Electronics',
   },
@@ -52,9 +52,9 @@ const MOCK_PRODUCTS = [
     price: '$59',
     description: 'High performance running shoes.',
     images: [
-      { src: '/assets/imgs/RedShoes.jpeg', alt: 'Running Shoes' },
-      { src: '/assets/imgs/BlueShoes.jpeg', alt: 'Running Shoes' },
-      { src: '/assets/imgs/GreenShoes.jpeg', alt: 'Running Shoes' }
+      { src: 'public/assets/imgs/RedShoes.jpeg', alt: 'Running Shoes' },
+      { src: 'public/assets/imgs/BlueShoes.jpeg', alt: 'Running Shoes' },
+      { src: 'public/assets/imgs/GreenShoes.jpeg', alt: 'Running Shoes' }
     ],
     category: 'Clothing',
   },
@@ -64,9 +64,9 @@ const MOCK_PRODUCTS = [
     price: '$30',
     description: 'High performance running shoes.',
     images: [
-      { src: '/assets/imgs/RedBag.jpeg', alt: 'Backpack' },
-      { src: '/assets/imgs/BlueBag.jpeg', alt: 'Backpack' },
-      { src: '/assets/imgs/GreenBag.jpeg', alt: 'Backpack' }
+      { src: 'public/assets/imgs/RedBag.jpeg', alt: 'Backpack' },
+      { src: 'public/assets/imgs/BlueBag.jpeg', alt: 'Backpack' },
+      { src: 'public/assets/imgs/GreenBag.jpeg', alt: 'Backpack' }
     ],
     category: 'Acssesories',
   }
@@ -86,11 +86,11 @@ export default function ProductPage() {
   const [qty, setQty]     = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
 
-  // simulate fetch
+
   const fetchProduct = (id = 1) => {
     setLoading(true); setError('');
     setTimeout(() => {
-      if (Math.random() < 0.05) { // small error chance
+      if (Math.random() < 0.05) {
         setLoading(false);
         setError('Network error: failed to fetch product.');
         return;

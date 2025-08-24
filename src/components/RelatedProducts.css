@@ -15,7 +15,7 @@
   
   .image-wrapper1 {
     width: 100%;
-    height: 200px; /* ارتفاع ثابت للصور */
+    height: 200px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
   
   .related-img {
   
-    object-fit: cover; /* يجعل الصور كلها بنفس الأبعاد بدون تشويه */
+    object-fit: cover; 
   }
   
   .card-body {

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Modal } from 'bootstrap'; // هذا صحيح
+import { Modal } from 'bootstrap'; 
 
 export default function AddToCartModal({ open, onClose, summary = {} }) {
   const ref = useRef(null);
@@ -8,7 +8,6 @@ export default function AddToCartModal({ open, onClose, summary = {} }) {
   useEffect(() => {
     if (!ref.current) return;
 
-    // إنشاء instance للـ modal مرة واحدة فقط
     if (!modalInstance.current) {
       modalInstance.current = new Modal(ref.current, { backdrop: 'static' });
     }

@@ -8,13 +8,13 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
 }
 
-/* skip link focusable */
+
 .visually-hidden-focusable {
   position: absolute; left: -999px; width: 1px; height: 1px; overflow: hidden;
   &:focus { position: static; width: auto; height: auto; margin: 16px; padding: 8px; background: #fff; border: 2px solid #000; z-index: 1000; }
 }
 
-/* Navbar hover style similar to your original */
+
 .navbar {
   padding: 16px;
   transition: background-color .3s ease;
