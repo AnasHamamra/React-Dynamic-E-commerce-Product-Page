@@ -16,9 +16,9 @@ const MOCK_PRODUCTS = [
     price: '$299',
     description: 'A powerful smartphone with long battery life.',
     images: [
-      { src: process.env.PUBLIC_URL + '/assets/imgs/RedSmartphone.jpeg', alt: 'Smartphone1'},
-      { src: process.env.PUBLIC_URL + '/assets/imgs/BlueSmartphone.jpeg', alt: 'Smartphone2' },
-      { src: process.env.PUBLIC_URL + '/assets/imgs/GreenSmartphone.jpeg', alt: 'Smartphone3' }
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/RedSmartphone.jpeg`, alt: 'Smartphone1'},
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/BlueSmartphone.jpeg`, alt: 'Smartphone2' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/GreenSmartphone.jpeg`, alt: 'Smartphone3' }
     ],
     category: 'Electronics',
   },
@@ -28,9 +28,9 @@ const MOCK_PRODUCTS = [
     price: '$19',
     description: 'Comfortable cotton T-shirt available in all sizes.',
     images: [
-      { src: process.env.PUBLIC_URL +'/assets/imgs/RedTshirt.jpeg', alt: 'T-Shirt1' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/BlueTshirt.jpeg', alt: 'T-Shirt2' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/GreenTshirt.jpeg', alt: 'T-Shirt3' }
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/RedTshirt.jpeg`, alt: 'T-Shirt1' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/BlueTshirt.jpeg`, alt: 'T-Shirt2' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/GreenTshirt.jpeg`, alt: 'T-Shirt3' }
     ],
     category: 'Clothing',
   },
@@ -40,9 +40,9 @@ const MOCK_PRODUCTS = [
     price: '$899',
     description: 'Lightweight laptop for work and play.',
     images: [
-      { src: process.env.PUBLIC_URL +'/assets/imgs/RedLaptop.jpeg', alt: 'Laptop' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/BlueLaptop.jpeg', alt: 'Laptop' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/GreenLaptop.jpeg', alt: 'Laptop' }
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/RedLaptop.jpeg`, alt: 'Laptop' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/BlueLaptop.jpeg`, alt: 'Laptop' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/GreenLaptop.jpeg`, alt: 'Laptop' }
     ],
     category: 'Electronics',
   },
@@ -52,9 +52,9 @@ const MOCK_PRODUCTS = [
     price: '$59',
     description: 'High performance running shoes.',
     images: [
-      { src: process.env.PUBLIC_URL +'/assets/imgs/RedShoes.jpeg', alt: 'Running Shoes' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/BlueShoes.jpeg', alt: 'Running Shoes' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/GreenShoes.jpeg', alt: 'Running Shoes' }
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/RedShoes.jpeg`, alt: 'Running Shoes' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/BlueShoes.jpeg`, alt: 'Running Shoes' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/GreenShoes.jpeg`, alt: 'Running Shoes' }
     ],
     category: 'Clothing',
   },
@@ -64,9 +64,9 @@ const MOCK_PRODUCTS = [
     price: '$30',
     description: 'High performance running shoes.',
     images: [
-      { src: process.env.PUBLIC_URL +'/assets/imgs/RedBag.jpeg', alt: 'Backpack' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/BlueBag.jpeg', alt: 'Backpack' },
-      { src: process.env.PUBLIC_URL +'/assets/imgs/GreenBag.jpeg', alt: 'Backpack' }
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/RedBag.jpeg`, alt: 'Backpack' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/BlueBag.jpeg`, alt: 'Backpack' },
+      { src: `${process.env.PUBLIC_URL}/assets/imgs/GreenBag.jpeg`, alt: 'Backpack' }
     ],
     category: 'Acssesories',
   }
